@@ -24,6 +24,9 @@ public class Cars{
 	@Column(name="COLOR")
 	private String color;
 	
+
+	
+	
 	//add @ManyToOne(cascade=CascateType.MERGE, fetch=FetchType.EAGER)
 	//Finish  join	@JoinColumn(name="")
 	
@@ -33,9 +36,14 @@ public class Cars{
 	}
 	
 	public Cars(String name, String color) {
+		this.id = id;
 		this.name = name;
 		this.color = color;
+		this.octane =octane;
+		this.lb=lb;
 	}
+
+	
 
 	public int getId() {
 		return id;
@@ -61,6 +69,8 @@ public class Cars{
 		this.color = color;
 	}
 
+
+	
 	@Override
 	public String toString() {
 		return "Cars [id=" + id + ", name=" + name + ", color=" + color + "]";
