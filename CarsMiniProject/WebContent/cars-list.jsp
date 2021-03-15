@@ -9,7 +9,7 @@
 </head>
 <body>
 	<h1>List Of Cars</h1>
-	<form method = "post" action="CarNavigationServlet">
+	<form method = "post" action="carNavigationServlet">
 	<table>
 	<c:forEach items="${requestScope.allItems}" var="currentitem">
 	<tr>
@@ -23,5 +23,7 @@
 	<input type="submit" value="delete" name="doThisToItem">
 	<input type="submit" value="add" name="doThisToItem">
 	</form>
+	<br />
+	<a href="index.html">HomePage</a>
 </body>
 </html>
